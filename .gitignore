@@ -1,0 +1,9 @@
+# 环境与缓存
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+
+# 数据产物(含业务数字的 CSV/PNG 与 1.2GB pickle 缓存, 不入库)
+analysis/output/
