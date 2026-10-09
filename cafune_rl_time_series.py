@@ -6,8 +6,8 @@
 #         v2.1二轮流评审·符号/时点/杠杆修正(09-21) → v3 全量可执行(09-21)
 #         → v3.1 Claude交叉修复(09-21): V0Provider兜底改先验(不碰真值)/
 #         state_dim去reset副作用/空窗补记账C/demo参数配平/中位字典补product_id
-# 设计文档与两轮评审记录: memory/odt_rl_forecast_label_claude_review.md,
-#                        memory/odt_rl_fusion_v2_review.md
+# 设计文档与两轮评审记录: memory/demo_rl_forecast_label_claude_review.md,
+#                        memory/demo_rl_fusion_v2_review.md
 #
 # 【本文件的可跑边界】
 #   本地可跑(无需df_final): ForecastProvider家族(Oracle/V0/Mock) + BudgetTracker
@@ -78,7 +78,7 @@ class OracleProvider(ForecastProvider):
 class V0Provider(ForecastProvider):
     """V0同构模型: day_total_hat = 历史同weekday中位日总 × 已用(t0)/历史同weekday同t0中位已用。
     分位带宽 = 该城历史残差比(actual/pred)按t0分桶的经验q10/q90因子(demo级:全样本内计算,
-    严格回测的时序切分归建模线, 见memory/odt_rl_v0_first_results)。"""
+    严格回测的时序切分归建模线, 见memory/demo_rl_v0_first_results)。"""
 
     N_BUCKET = 8  # 96窗分8桶, 每桶12窗
 

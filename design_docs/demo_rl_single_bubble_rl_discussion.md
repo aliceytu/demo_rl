@@ -1,5 +1,5 @@
 ---
-name: odt_rl_single_bubble_rl_discussion
+name: demo_rl_single_bubble_rl_discussion
 description: "用户对\"单冒泡粒度RL\"的待深入理解点:POMDP累积模糊性/state量级/信用分配,及三个可操作变体的结论"
 metadata: 
   node_type: memory
@@ -41,6 +41,6 @@ metadata:
 - **拉格朗日线已闭环**(用户自己重写出标准形式 gmv+λ·[trip−(1+th)·base]): 理解 grad=约束缺口(非迭代差分)、包络定理免费梯度(差分法可选但被碾压)、对偶=**上界**非下界(min是压薄上界,V字形)、λ=影子价格/双向兑换率(违约区=单位成本,超额区=单位补贴;λ≥0地板=负价格荒谬)。线上λ列从此可读:λGP钉地板=TR约束不咬人,λCr~21=CR约束极贵
 - simple_rule_policy与拉格朗日血缘、存亡线/测谎仪/退路三重身份已多轮确认;max(min_lambda,·)=投影记账,与求导无关
 - 2026-09-14 进入 3700+ RL专属代码(ReplayBuffer→DQNAgent→train_step→train_dqn_on_df→评估入口→main_run_example),已给阅读框架导览
-- 2026-09-14 起建笔记目录 **odt_rl/算法理解/**:已落盘《拉格朗日理解.txt》(λ影子价格/max(min)两层/对偶上界V字/hinge买断价/score vs reward层次,经用户review确认)。用户偏好:笔记先在对话里展示草稿→共同对齐→再落盘。待写:DQN/RL侧笔记(Bellman自举三格链/三病三药/ε探索/on-off policy可重跑性/训练循环/代码速查/易错点清单,草稿曾在对话中完整展示过)
+- 2026-09-14 起建笔记目录 **demo_rl/算法理解/**:已落盘《拉格朗日理解.txt》(λ影子价格/max(min)两层/对偶上界V字/hinge买断价/score vs reward层次,经用户review确认)。用户偏好:笔记先在对话里展示草稿→共同对齐→再落盘。待写:DQN/RL侧笔记(Bellman自举三格链/三病三药/ε探索/on-off policy可重跑性/训练循环/代码速查/易错点清单,草稿曾在对话中完整展示过)
 
-相关: [[odt_rl_project]]
+相关: [[demo_rl_project]]

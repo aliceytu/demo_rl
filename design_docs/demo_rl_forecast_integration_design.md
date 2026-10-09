@@ -1,5 +1,5 @@
 ---
-name: odt_rl_forecast_integration_design
+name: demo_rl_forecast_integration_design
 description: "时序预估接入cafune_rl的定稿设计:env侧三插点(动态th/state加3维/step累计账本)+预估规格清单+动工顺序,用户与春蓉的接口契约"
 metadata: 
   node_type: memory
@@ -37,7 +37,7 @@ tr_th(t) = 日目标TR − (真实累计TR(t) − simu累计TR(t)) × (已用GMV
 
 **插点③ step() 记两本累计账**(3497): 真实累计(agent的λ走出)与simu累计(固定λ基线)。后者不用新算——fixed_baseline_cache(3379)已存每窗固定λ指标,累加即可。
 
-## 预估规格清单(**2026-09-17经独立评审修订:label改标量日总版**,详见[[odt_rl_forecast_label_claude_review]]含原设计者回应)
+## 预估规格清单(**2026-09-17经独立评审修订:label改标量日总版**,详见[[demo_rl_forecast_label_claude_review]]含原设计者回应)
 
 - **主label: 归一化日总GMV标量**(城内,÷历史weekday中位日总),三头P10/P50/P90。依据:恒等式rem(t₀)=日总−已用(已用为观测值),唯一未知量是日总;当前下游只吃标量
 - **接口: provider返回日总分位数,不传rem**——尾盘rem=两接近数相减放大相对误差;used_ratio=已用/日总由消费端算,无消解
@@ -62,4 +62,4 @@ tr_th(t) = 日目标TR − (真实累计TR(t) − simu累计TR(t)) × (已用GMV
 
 待办: 用户同意后,按老流程(展示草稿→review→落盘)写 算法理解/时序预估接入设计.txt 作为与春蓉对齐的设计稿底本。
 
-相关: [[odt_rl_gmv_forecast_discussion]] [[odt_rl_project]]
+相关: [[demo_rl_gmv_forecast_discussion]] [[demo_rl_project]]

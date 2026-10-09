@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 
 DATA_PATH = "/Users/didi/workspace/data/sp_features/tarnet/BR#2025-05-01_2026-09-15_gmv_15min_day.txt"
-CACHE_DIR = "/Users/didi/workspace/python-project/odt_rl/analysis/output"
+CACHE_DIR = "/Users/didi/workspace/python-project/demo_rl/analysis/output"
 CLEAN_VERSION = "v2"   # 清洗逻辑变更时 +1, 旧缓存自动失效
 
 

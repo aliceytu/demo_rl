@@ -1,16 +1,16 @@
 ---
-name: odt_rl_project
-description: odt_rl 新项目 — 把 sp32_dri.py 拉格朗日松弛优化迭代成强化学习;含 SP32 结构与 RL 映射
+name: demo_rl_project
+description: demo_rl 新项目 — 把 sp32_dri.py 拉格朗日松弛优化迭代成强化学习;含 SP32 结构与 RL 映射
 metadata: 
   node_type: memory
   type: project
   originSessionId: 9d911d18-df4b-44da-868c-9eca5cbc0b91
 ---
 
-# odt_rl 项目(2026-09-09 启动了解)
+# demo_rl 项目(2026-09-09 启动了解)
 
 目标:把 dintl-driver-spark `strategy/odt/odt_daily_update/lib/sp32_dri.py` 的拉格朗日松弛优化(SP32.prob_solve)迭代成强化学习。
-代码目录:`/Users/didi/workspace/python-project/odt_rl`(独立于 dintl-driver-spark,py3.9 venv,目前只有 `cafune_rl.py`)。
+代码目录:`/Users/didi/workspace/python-project/demo_rl`(独立于 dintl-driver-spark,py3.9 venv,目前只有 `cafune_rl.py`)。
 
 ## 双AI分工协作(2026-09-17用户定,两实例共读此节)
 
@@ -21,7 +21,7 @@ metadata:
 
 - **交叉review**: 每方里程碑产物给对方审,沿用label review格式(评审落`*_review.md`文件,作者回应附同文件);裁决原则=数学裁决认数学,判断裁决看证据等级
 - 背景: 春蓉知道cafune_rl数据流有问题,在忙另外的上线流程没时间管——数据流梳理由用户侧主导,她的线并行;她的"已知问题清单"是最高价值情报,待用户去要
-- 接口: 数据流线供=干净聚合表+《源表事实清单》+口径文档;建模线按[[odt_rl_forecast_integration_design]]的标量日总契约实现;建模发现的数据异常回流数据流线修
+- 接口: 数据流线供=干净聚合表+《源表事实清单》+口径文档;建模线按[[demo_rl_forecast_integration_design]]的标量日总契约实现;建模发现的数据异常回流数据流线修
 
 ## SP32 核心结构(被替换的对象)
 

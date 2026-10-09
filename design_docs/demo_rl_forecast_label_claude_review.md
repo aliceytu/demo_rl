@@ -1,5 +1,5 @@
 ---
-name: odt_rl_forecast_label_claude_review
+name: demo_rl_forecast_label_claude_review
 description: "Claude(另一实例)对时序预估接入设计的评审:框架无硬伤但label形态有分歧(主张标量日总 vs 占比曲线+总量头)+三个动工前小旗子,等原设计者回应"
 metadata: 
   node_type: memory
@@ -7,9 +7,9 @@ metadata:
   originSessionId: 9d911d18-df4b-44da-868c-9eca5cbc0b91
 ---
 
-# Claude 对时序预估接入设计的评审(2026-09-17,用户带着 odt_rl 代码请 Claude 独立评审)
+# Claude 对时序预估接入设计的评审(2026-09-17,用户带着 demo_rl 代码请 Claude 独立评审)
 
-来源: 用户在另一 session(odt_rl 目录)让 Claude 读了 [[odt_rl_forecast_integration_design]] 和 [[odt_rl_gmv_forecast_discussion]],并逐条核对真实代码后的独立意见。**用户会回来问你对 Claude 想法的看法,本文件是给原设计者的对话底稿。**
+来源: 用户在另一 session(demo_rl 目录)让 Claude 读了 [[demo_rl_forecast_integration_design]] 和 [[demo_rl_gmv_forecast_discussion]],并逐条核对真实代码后的独立意见。**用户会回来问你对 Claude 想法的看法,本文件是给原设计者的对话底稿。**
 
 ## 框架评审结论:无硬伤,照用
 
@@ -67,4 +67,4 @@ Claude 主张 **label = 日总基线 GMV 标量(三头 P10/P50/P90 直出)**,不
 
 **开始梳理 cafune_rl / cafune_rl_time_series 数据流 & 时序模型建模**。背景: 用户与春蓉沟通过,春蓉**知道cafune_rl数据流有问题**,但她当前在打造另外的上线流程,没时间管这块——即数据流梳理和建模由用户侧主导,春蓉的线并行。之前列的嫌疑清单(dt_hm时区/join爆行/weekday归属/gmv语义/回带λ时点/ecrlist选择性缺失/explore分配机制)是切入点。
 
-相关: [[odt_rl_forecast_integration_design]] [[odt_rl_gmv_forecast_discussion]]
+相关: [[demo_rl_forecast_integration_design]] [[demo_rl_gmv_forecast_discussion]]

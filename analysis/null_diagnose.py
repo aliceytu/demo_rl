@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 
 DATA_PATH = "/Users/didi/workspace/data/sp_features/tarnet/BR#2025-05-01_2026-09-15_gmv_15min_day.txt"
-OUT_DIR = "/Users/didi/workspace/python-project/odt_rl/analysis/output"
+OUT_DIR = "/Users/didi/workspace/python-project/demo_rl/analysis/output"
 
 dtype_map = {
     "city_id": "string", "product_id": "string", "bj_date": "string",

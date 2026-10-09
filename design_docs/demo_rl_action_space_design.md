@@ -1,5 +1,5 @@
 ---
-name: odt_rl_action_space_design
+name: demo_rl_action_space_design
 description: "司机侧5约束动作空间设计:阵营分组(cost实为司机收入下限,重要修正)/组内坐标组间枚举原则/三种接口(81枚举·21省钱版·12自回归);用户\"勉强明白\"待巩固"
 metadata: 
   node_type: memory
@@ -52,4 +52,4 @@ d=司机侧调价(加价)。TR 干净推导: **TR ≈ 1 − dri_fee(1+d)/(pax_pr
 
 当前27/81规模: 平铺枚举+DQN最省心,以上都是期货。增量路径: 乘客3维跑稳→司机侧标量力度1维(方向信求解器幅度信RL)→有肉再块结构→再大SAC连续。
 
-相关: [[odt_rl_project]] [[odt_rl_single_bubble_rl_discussion]] [[odt_rl_gmv_forecast_discussion]]
+相关: [[demo_rl_project]] [[demo_rl_single_bubble_rl_discussion]] [[demo_rl_gmv_forecast_discussion]]

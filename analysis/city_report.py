@@ -16,7 +16,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-OUT = "/Users/didi/workspace/python-project/odt_rl/analysis/output"
+OUT = "/Users/didi/workspace/python-project/demo_rl/analysis/output"
 DL = "/Users/didi/Downloads"
 
 

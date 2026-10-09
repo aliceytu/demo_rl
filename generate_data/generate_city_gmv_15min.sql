@@ -4,7 +4,7 @@
 -- 源表:   international_rider_strategy.sp_feature_bub_order_pay_base_v9
 -- 粒度:   city_id x product_id x bj_date x window_idx (15min, 0-95)
 -- 口径:   bj_date(北京日期); 结果列分 all_/explore_ 双轨; 空窗由grid补齐(NULL=无数据,0=有流量为零)
--- 设计文档: memory/odt_rl_gmv_forecast_discussion.md + 算法理解/拉格朗日理解.txt
+-- 设计文档: memory/demo_rl_gmv_forecast_discussion.md + 算法理解/拉格朗日理解.txt
 -- 待确认: Step 1 的 dt_hm 格式(影响 window_idx 解析,见 ★ 标记处)
 -- ============================================================================
 

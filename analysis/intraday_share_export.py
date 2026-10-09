@@ -14,7 +14,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from data_preprocess.clean_data import load_clean
 
-OUT_PATH = "/Users/didi/workspace/python-project/odt_rl/analysis/output/intraday_share_avg_by_city.csv"
+OUT_PATH = "/Users/didi/workspace/python-project/demo_rl/analysis/output/intraday_share_avg_by_city.csv"
 
 
 def main():

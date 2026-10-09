@@ -1,5 +1,5 @@
 ---
-name: odt_rl_gmv_forecast_discussion
+name: demo_rl_gmv_forecast_discussion
 description: "用户负责时序预估支线(预估剩余GMV):已定1367公式日内化+V0模板/V1多城残差模型/V2预训练基础模型三角色方案(用户会经常回来问V0V1V2定义);数据=全国70城×2025-05起"
 metadata: 
   node_type: memory
@@ -129,7 +129,7 @@ metadata:
 - **用户说流程"实际上有问题"但未指明具体问题**——明天先问清看到的现象。候选嫌疑: gmv完单语义未验证(两次都CHECK_MODE=False跳过了run_check)/base表抽样疑云/多城留存/口径问题(用户可能从数据或业务上发现了什么)
 - 数据血缘已梳理并存档于对话: 线上Go(PublicLog)→base_v9(bub×order×pay宽表)→{春蓉simu_v9抽样txt | 我们直接聚合}→odt_forecast_city_gmv_15min双轨表
 - 顺手准备的体检SQL: ecrlist/crlist缺失率检查(含explore拆分,修正了concat_ws补零/引号/空串三坑)——回带路线可行性前置检查,待跑
-- 今日概念里程碑(已详谈): ①融合层伪代码定稿 odt_rl/cafune_rl_time_series.py(#wjz恢复标记,五模块) ②primal-dual统一叙事+**认识论修正: hinge是罚函数法非拉格朗日法,"回到拉格朗日最优"是待验证命题非推导结论,最便宜可证伪实验=权重敏感性(5→20→50)** ③λ*是点(开环)π是映射(闭环,装着预案): 回到拉格朗日的是价格侧,没回来的是会互动的primal ④弹性修正: GMV权重一阶相消,高峰紧/平峰松由弹性+dp_th硬规则决定非结构必然;日TR基本由高峰决定,平峰TR近乎自由变量
+- 今日概念里程碑(已详谈): ①融合层伪代码定稿 demo_rl/cafune_rl_time_series.py(#wjz恢复标记,五模块) ②primal-dual统一叙事+**认识论修正: hinge是罚函数法非拉格朗日法,"回到拉格朗日最优"是待验证命题非推导结论,最便宜可证伪实验=权重敏感性(5→20→50)** ③λ*是点(开环)π是映射(闭环,装着预案): 回到拉格朗日的是价格侧,没回来的是会互动的primal ④弹性修正: GMV权重一阶相消,高峰紧/平峰松由弹性+dp_th硬规则决定非结构必然;日TR基本由高峰决定,平峰TR近乎自由变量
 
 ## 数据管道开工记录(2026-09-15)
 
@@ -183,4 +183,4 @@ metadata:
 - V0/V1/V2 定稿见上文专节(用户会经常回查)
 - λ离散化取舍解读见上文专节(用户要求记住,后期继续探讨: 触发点=维度扩展/精度需求)
 
-相关: [[odt_rl_project]] [[odt_rl_single_bubble_rl_discussion]]
+相关: [[demo_rl_project]] [[demo_rl_single_bubble_rl_discussion]]

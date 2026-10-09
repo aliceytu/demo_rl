@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 # ============ 参数区 ============
 DATA_PATH = "/Users/didi/workspace/data/sp_features/tarnet/BR#2025-05-01_2026-09-15_gmv_15min_day.txt"
-OUT_DIR = "/Users/didi/workspace/python-project/odt_rl/analysis/output"
+OUT_DIR = "/Users/didi/workspace/python-project/demo_rl/analysis/output"
 N_BUCKETS = 12                  # t0 分桶数, 每桶 96/N_BUCKETS=8 窗
 MIN_HIST_SAME_WEEKDAY = 4       # 模板最少需要的历史同weekday天数(预热)
 EXAMPLE_CITIES = ["55000233", "55000185", "55000207"]   # 形状图示例城

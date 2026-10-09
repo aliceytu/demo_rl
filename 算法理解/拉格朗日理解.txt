@@ -2,7 +2,7 @@
 拉格朗日的关键理解（λ 的业务语义）
 整理日期：2026-09-14
 用途：个人学习备忘。行号指 dintl-driver-spark/strategy/odt/odt_daily_update/
-      lib/sp32_dri.py 与 odt_rl/cafune_rl.py
+      lib/sp32_dri.py 与 demo_rl/cafune_rl.py
 ================================================================================
 
 一、λ 是什么：约束的价格（影子价格）

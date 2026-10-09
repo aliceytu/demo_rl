@@ -1,5 +1,5 @@
 ---
-name: odt_rl_fusion_v2_review
+name: demo_rl_fusion_v2_review
 description: "Claude对cafune_rl_time_series.py v2完整设计稿的评审(2026-09-21):1符号bug(终端约束装反)+1时点漏洞(一窗look-ahead)+1语义漂移(杠杆u/(1-u)→u)+3小问题,等原设计者回应"
 metadata:
   node_type: memory
@@ -68,4 +68,4 @@ ratio = self.table_used / max(ft["p50"] - self.table_used, eps)   # u/(1−u), r
 
 v2.1文件已按以上全部落位,变更记录见文件头[P0][P1][P2][P3]标注。
 
-相关: [[odt_rl_forecast_label_claude_review]] [[odt_rl_v0_first_results]] [[odt_rl_forecast_integration_design]] [[odt_rl_task_division]]
+相关: [[demo_rl_forecast_label_claude_review]] [[demo_rl_v0_first_results]] [[demo_rl_forecast_integration_design]] [[demo_rl_task_division]]

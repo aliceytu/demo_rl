@@ -15,8 +15,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-CSV_PATH = "/Users/didi/workspace/python-project/odt_rl/analysis/output/intraday_share_avg_by_city.csv"
-OUT_PATH = "/Users/didi/workspace/python-project/odt_rl/analysis/output/all_cities_intraday_share.png"
+CSV_PATH = "/Users/didi/workspace/python-project/demo_rl/analysis/output/intraday_share_avg_by_city.csv"
+OUT_PATH = "/Users/didi/workspace/python-project/demo_rl/analysis/output/all_cities_intraday_share.png"
 
 
 def main():
